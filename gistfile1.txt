@@ -1,0 +1,12 @@
+print("Welcome to the Leap Year Calculator.")
+
+Year = int(input("Choose a year\n"))
+
+if Year % 4 != 0:
+  print(f"{Year} is not a leap year.")
+elif Year % 100 != 0:
+  print(f"{Year} is a leap year.")
+elif Year % 400 != 0:
+  print(f"{Year} is not a leap year.") 
+else:
+  print(f"{Year} is a leap year.")
