@@ -1,0 +1,25 @@
+print("Welcome to the quadrilateral sort!\n")
+
+print("enter Y for Yes, and N for No.\n")
+
+side_check  = input("Are all sides equal?\n")
+angle_check = input("Are all angles equal?\n")
+n_parallel  = int(input("Number of pair of parallel sides is:\n"))#checks for number of pair of parallel sides
+adj_side    = input("Are adjacent sides equal in length?\n")
+
+if side_check == "Y":
+  if angle_check == "Y":
+    print("Quadrilateral is a square.")
+  else:
+    print("Quadrilateral is a rhombus.")  
+elif n_parallel == 2:
+    if angle_check == "Y":
+      print("Quadrilateral is a rectangle.")
+    else:
+      print("Quadrilateral is a parallelogram.")
+elif n_parallel == 1:
+    print("Quadrilateral is a trapezium.")
+elif adj_side == "Y":
+  print("Quadrilateral is a kite.")
+else:
+  print("Quadrilateral is unsorted.")  
